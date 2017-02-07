@@ -119,8 +119,9 @@ button{
 #main-menu li.active{
     text-decoration: none;
 }
-#main-menu a{
+#main-menu a, #main-menu a:visited{
     text-decoration: none;
+    color: 	#483D8B;
 }
 @media screen and (min-width: 767px){
     #main-menu .pull-right{
