@@ -80,15 +80,15 @@ button{
 }
 @-webkit-keyframes spin{
     0%{transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
+    100%{transform: rotate(720deg);}
 }
 @-ms-keyframes spin{
     0%{transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
+    100%{transform: rotate(720deg);}
 }
 @keyframes spin{
     0%{transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
+    100%{transform: rotate(720deg);}
 }
 #main-menu {
     background-color: #00BFFF;
