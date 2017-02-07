@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reponsive Test Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/style.css" rel="stylesheet">
+    <style>
+        #body{
+            display: none;
+        }
+    </style>
+</head>
+
+<body onload="delay()">
+    <div id="main-menu" class="round">
+        <nav>
+            <ul>
+                <li><a href="index.html">Main</a></li>
+                <li class="active"><a href="animate.html">Animate</a></li>
+                <li>Pohoda</li>
+                <li>Malina</li>
+                <li>Rajec</li>
+                <li>Egres</li>
+                <li class="pull-right">About</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-3" id="sidebar">
+            <ul>
+                <li class="round">Menu 1</li>
+                <li class="round">Animate</li>
+                <li class="round">Menu 3</li>
+                <li class="round">Menu 4</li>
+                <li class="round">Menu 5</li>
+            </ul>
+        </div>
+        
+        <div class="col-9 round bordered">
+            <div id="loader" class="center"></div>
+            <p class="hidden" style="display: none;text-align: center;">Here was a CSS animation while content was loaded.</p>
+            <button class="center hidden" onclick="reload()">Reload</button>
+            
+        </div>
+    </div>
+    <div id="footer" class="round">
+        Copyright by Sentinel(c)
+    </div>
+    <script>
+        var delay = function(){
+            setTimeout(animate, 2000);
+        }
+        var reload = function(){
+            document.location.reload(false);
+        }
+        
+        var animate = function(){
+            document.getElementById('loader').style.display = "none";
+            var elms = document.getElementsByClassName("hidden");
+            [].forEach.call(elms, function(elm){
+                elm.style.display = "block";
+                console.log(elm);
+            })
+        }
+        
+    </script>
+</body>
+
+</html>
