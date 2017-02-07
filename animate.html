@@ -5,11 +5,6 @@
     <title>Reponsive Test Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="styles/style.css" rel="stylesheet">
-    <style>
-        #body{
-            display: none;
-        }
-    </style>
 </head>
 
 <body onload="delay()">
@@ -60,7 +55,6 @@
             var elms = document.getElementsByClassName("hidden");
             [].forEach.call(elms, function(elm){
                 elm.style.display = "block";
-                console.log(elm);
             })
         }
         
